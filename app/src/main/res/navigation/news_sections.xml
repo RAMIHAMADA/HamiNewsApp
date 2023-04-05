@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_sections"
+    app:startDestination="@id/allNewsFragment">
+
+    <fragment
+        android:id="@+id/allNewsFragment"
+        android:name="com.example.haminews.ui.all.news.AllNewsFragment"
+        android:label="fragment_all_news"
+        tools:layout="@layout/fragment_all_news" >
+        <action
+            android:id="@+id/action_allNewsFragment_to_detailsNewsFragment"
+            app:destination="@id/detailsNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsSectionsFragment"
+        android:name="com.example.haminews.ui.news.sections.NewsSectionsFragment"
+        android:label="fragment_news_sections"
+        tools:layout="@layout/fragment_news_sections" >
+        <action
+            android:id="@+id/action_newsSectionsFragment_to_allNewsFragment"
+            app:destination="@id/allNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsNewsFragment"
+        android:name="com.example.haminews.ui.detalis.news.DetailsNewsFragment"
+        android:label="fragment_details_news"
+        tools:layout="@layout/fragment_details_news" />
+</navigation>
