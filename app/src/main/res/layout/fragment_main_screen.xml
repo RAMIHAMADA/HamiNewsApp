@@ -26,6 +26,17 @@
         app:layout_constraintStart_toStartOf="@id/v_main_screen"
         app:layout_constraintEnd_toEndOf="@id/v_main_screen"
         app:layout_constraintTop_toTopOf="@id/v_main_screen"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_item_card_news"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_main_screen"
+        tools:listitem="@layout/item_card_news"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
